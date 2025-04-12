@@ -3,11 +3,14 @@ import { ChevronRight, User } from "lucide-react";
 
 const Header = () => {
   return ( 
-    <header className="flex justify-between items-center p-4">
+    <header className="flex justify-between items-center py-4 px-10">
       <NavLink className="text-4xl font-bold bg-gradient-to-r from-[#ff0024] to-[#f8e800] bg-clip-text text-transparent" to={"/"} end>
         KiberBet
       </NavLink>
       <div className="flex gap-10 font-medium">
+      <NavLink to={"/cases"} end>
+          Кейсы
+        </NavLink>
         <NavLink to={"/roulette"} end>
           Рулетка
         </NavLink>
